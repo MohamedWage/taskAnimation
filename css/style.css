@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.move{
+    width: 300px;
+    height: 200px;
+    border-radius:50%;
+    position: absolute;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+.div1, .div3, .div5, .div7{
+    animation-name: move;
+    background-color: rgb(0, 255, 204);
+
+}
+.div2, .div4, .div6,.div8{
+    animation-name: change;
+    background-color: rgb(67, 45, 107);
+}
+.div1{
+    top: 0;
+    left: 0;
+}
+.div2{
+    animation-delay: 3s;
+    top: 0;
+    left: 1100px;
+}
+.div3{
+    animation-delay: 6s;
+    top: 250px;
+    left: 0px;
+}
+.div4{
+    animation-delay: 9s;
+    top: 250px;
+    left: 1100px;
+}
+.div5{
+    animation-delay: 12s;
+    top: 500px;
+    left: 0;
+}
+.div6{
+    animation-delay: 15s;
+    top: 500px;
+    left: 1100px;
+}
+.div7{
+    animation-delay: 18s;
+    top: 750px;
+    left: 0;
+}
+.div8{
+    animation-delay: 21s;
+    top: 750px;
+    left: 1100px;
+}
+@keyframes move{
+    0% {
+       background-color: yellow;
+    }
+    25% {
+       background-color: aqua;
+    }
+    50% {
+       background-color: brown;    
+    }
+    75% {
+       background-color: greenyellow;
+    }
+    100% {
+       background-color: red;
+       left: 1100px;
+    }
+}
+@keyframes change{
+    0% {
+       background-color: yellow;
+    }
+    25% {
+       background-color: aqua;
+    }
+    50% {
+       background-color: brown;    
+    }
+    75% {
+       background-color: greenyellow;
+    }
+    100% {
+       background-color: red;
+       left: 0;
+    }
+}
